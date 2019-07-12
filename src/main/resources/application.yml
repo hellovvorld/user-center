@@ -1,12 +1,9 @@
 spring:
   datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.71.101:3306/user_center?characterEncoding=utf-8
-    hikari:
-      username: yuyongtao
-      password: yuyongtao
-      # >= 6.x: com.mysql.cj.jdbc.Driver
-      # <= 5.x: com.mysql.jdbc.Driver
-      driver-class-name: com.mysql.cj.jdbc.Driver
+    username: yuyongtao
+    password: yuyongtao
 
 #  cloud:
 #    nacos:
