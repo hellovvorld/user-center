@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -5,22 +8,19 @@ spring:
     username: yuyongtao
     password: yuyongtao
 
-#  cloud:
-#    nacos:
-#      discovery:
-#        # Ö¸¶¨nacos serverµÄµØÖ·
-#        server-addr: localhost:8848
-#        # Ö¸¶¨namespace
-#        # namespace: 56116141-d837-4d15-8842-94e153bb6cfb
-#        # NJ
-#        # Ö¸¶¨¼¯ÈºÃû³Æ
-#        cluster-name: BJ
-#        metadata:
-#          instance: c
-#          haha: hehe
-#          version: v1
-#  application:
-#    # ·şÎñÃû³Æ¾¡Á¿ÓÃ-£¬²»ÒªÓÃ_£¬²»ÒªÓÃÌØÊâ×Ö·û
-#    name: user-center
-#server:
-#  port: 8081
+  cloud:
+    nacos:
+      discovery:
+        # æŒ‡å®šnacos serverçš„åœ°å€
+        server-addr: 192.168.71.100:8848
+        # æŒ‡å®šnamespace
+        namespace: f0ab1714-3808-481f-9256-99d208410350
+        # æŒ‡å®šé›†ç¾¤åç§°
+        cluster-name: NJ
+        metadata:
+          instance: c
+          haha: hehe
+          version: v1
+  application:
+    # æœåŠ¡åç§°å°½é‡ç”¨-ï¼Œä¸è¦ç”¨_ï¼Œä¸è¦ç”¨ç‰¹æ®Šå­—ç¬¦
+    name: user-center
